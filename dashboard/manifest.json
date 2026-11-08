@@ -1,0 +1,14 @@
+{
+  "name": "daily-life",
+  "version": "0.1.0",
+  "label": "Daily Life",
+  "icon": "Sun",
+  "description": "Daily intelligence, cognitive state, briefing, schedule, and learning optimization.",
+  "api": "plugin_api.py",
+  "entry": "dist/index.js",
+  "tab": {
+    "path": "/daily-life",
+    "position": "after:calendar-hermes"
+  },
+  "slots": []
+}

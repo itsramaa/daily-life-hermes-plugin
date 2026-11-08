@@ -1,0 +1,21 @@
+name: daily-life
+version: 0.1.0
+description: "Master daily orchestrator for Hermes agent: interoception, resilient briefing, adaptive planning, connecting dot adapters, and learning optimization."
+author: "Hermes"
+provides_tools:
+  - daily_life_get_status
+  - daily_life_trigger_cycle
+  - daily_life_get_plan
+  - daily_life_replan
+  - daily_life_record_outcome
+  - daily_life_get_learned_insights
+provides_commands:
+  - daily
+provides_dashboard: true
+hooks:
+  - post_tool_call
+  - kanban_task_completed
+  - kanban_task_blocked
+pip_dependencies:
+  - pydantic>=2.0.0
+  - pydantic-settings>=2.0.0

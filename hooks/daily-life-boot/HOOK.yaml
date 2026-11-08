@@ -1,0 +1,4 @@
+name: daily-life-boot
+description: "Bootstrap Daily Life state and trigger catch-up planning on gateway startup"
+events:
+  - gateway:startup
